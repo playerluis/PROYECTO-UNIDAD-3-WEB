@@ -24,12 +24,6 @@
             <dd class="col-sm-10">
                 <c:out value="${especialidad.nombre}"/>
             </dd>
-            <dt class="col-sm-2">
-                Descripción
-            </dt>
-            <dd class="col-sm-10">
-                <c:out value="${especialidad.descripcion}"/>
-            </dd>
             <!-- Agregar más campos específicos de la especialidad -->
         </dl>
 
