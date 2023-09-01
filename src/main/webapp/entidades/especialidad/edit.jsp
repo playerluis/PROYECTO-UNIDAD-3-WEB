@@ -2,10 +2,9 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
 
-
 <t:template>
 
-    <h1 class="mb-4">editar Especialidad</h1>
+    <h1 class="mb-4">Editar Especialidad</h1>
 
     <div class="row">
         <div class="col-md-4">
