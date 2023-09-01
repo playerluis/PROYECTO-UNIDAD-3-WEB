@@ -21,10 +21,7 @@
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre">
                 </div>
-                <div>
-                    <label for="descripcion">Descripción:</label>
-                    <input type="text" id="descripcion" name="descripcion">
-                </div>
+
                 <!-- Agregar más campos específicos de la especialidad -->
                 <div>
                     <input type="submit" value="Crear">
