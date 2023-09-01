@@ -23,7 +23,7 @@
                 </div>
                 <div>
                     <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="${paciente.fechaNacimiento}">
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="${paciente.fecha_de_nacimiento}">
                 </div>
                 <div>
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
