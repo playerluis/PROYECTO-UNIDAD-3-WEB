@@ -4,7 +4,6 @@
 
 <t:template>
     <h1>Editar</h1>
-
     <h4>Paciente</h4>
     <hr/>
     <div class="row">
@@ -29,6 +28,14 @@
                 <div>
                     <label for="telefono">Teléfono:</label>
                     <input type="tel" id="telefono" name="telefono" value="${paciente.telefono}">
+                </div>
+                <div>
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="${paciente.fechaNacimiento}">
+                </div>
+                <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" value="${paciente.direccion}">
                 </div>
                 <div>
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
