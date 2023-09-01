@@ -25,8 +25,8 @@
                     <input type="text" id="apellido" name="apellido">
                 </div>
                 <div>
-                    <label for="fecha_de_nacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
+                    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento">
                 </div>
                 <div>
                     <input type="submit" value="Crear">
