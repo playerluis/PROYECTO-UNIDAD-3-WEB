@@ -11,26 +11,26 @@
         <div class="col-md-4">
             <form action="${pageContext.request.contextPath}/usuario" method="post">
                 <input type="hidden" name="_method" value="PUT" />
-                <div>
+                <div class="form-group">
                     <input type="hidden" name="id" value="${usuario.id}"/>
                 </div>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" value="${usuario.nombre}">
+                <div class="form-group">
+                    <label for="nombre" class="control-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" value="${usuario.nombre}">
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" value="${usuario.apellido}">
+                <div class="form-group">
+                    <label for="apellido" class="control-label">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control" value="${usuario.apellido}">
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" value="${usuario.email}">
+                <div class="form-group">
+                    <label for="email" class="control-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" value="${usuario.email}">
                 </div>
-                <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" value="${usuario.password}">
+                <div class="form-group">
+                    <label for="password" class="control-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control" value="${usuario.password}">
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
                 </div>
             </form>

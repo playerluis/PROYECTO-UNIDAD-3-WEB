@@ -25,10 +25,6 @@
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" value="${especialidad.nombre}">
                 </div>
-                <div>
-                    <label for="descripcion">Descripción:</label>
-                    <input type="text" id="descripcion" name="descripcion" value="${especialidad.descripcion}">
-                </div>
                 <!-- Agregar más campos específicos de la especialidad -->
                 <div>
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>

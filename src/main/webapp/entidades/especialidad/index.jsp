@@ -13,7 +13,6 @@
         <thead>
         <tr>
             <th>Nombre</th>
-            <th>Descripción</th>
             <th></th>
         </tr>
         </thead>
@@ -22,7 +21,6 @@
         <c:forEach var="especialidad" items="${especialidades}">
             <tr>
                 <td><c:out value="${especialidad.nombre}"/></td>
-                <td><c:out value="${especialidad.descripcion}"/></td>
                 <td>
                     <a href="${pageContext.request.contextPath}/especialidad?opcion=editar&id=${especialidad.id}"
                        class="btn btn-secondary">

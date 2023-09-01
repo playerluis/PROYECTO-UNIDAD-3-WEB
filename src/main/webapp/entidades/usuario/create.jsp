@@ -10,23 +10,23 @@
     <div class="row">
         <div class="col-md-7">
             <form action="${pageContext.request.contextPath}/usuario" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                <div class="form-group">
+                    <label for="nombre" class="control-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control">
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
+                <div class="form-group">
+                    <label for="apellido" class="control-label">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control">
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
+                <div class="form-group">
+                    <label for="email" class="control-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control">
                 </div>
-                <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password">
+                <div class="form-group">
+                    <label for="password" class="control-label">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="form-control">
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="submit" value="Crear">
                 </div>
             </form>
