@@ -22,8 +22,8 @@
                     <input type="text" id="apellido" name="apellido" value="${paciente.apellido}">
                 </div>
                 <div>
-                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="${paciente.fecha_de_nacimiento}">
+                    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" value="${paciente.fechaDeNacimiento}">
                 </div>
                 <div>
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
