@@ -36,7 +36,6 @@ public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUD
                 break;
             }
             case "editar": {
-                //example url: http://localhost:8080/usuario?opcion=editar&id=1
                 Model model = repository.find(Long.parseLong(req.getParameter("id")));
                 req.setAttribute(getEntityName(), model);
                 req.getRequestDispatcher(getEntityPath() + "/edit.jsp").forward(req, resp);
