@@ -15,38 +15,42 @@
         <img src="https://img.freepik.com/foto-gratis/doctor-pensando-sobre-fondo-blanco-aislado_1368-5828.jpg?w=2000" alt="Imagen del hospital" width="500" height="500">
     </div>
 </div>
-    <div class="d-flex justify-content-center mt-5">
-        <div class="card-deck">
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1572/1572132.png" class="card-img-top" alt="Imagen 1" width="150" height="150">
-                <div class="card-body">
-                    <h5 class="card-title">Agendar Cita</h5>
-                    <button class="btn btn-primary">Ir</button>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1572/1572132.png" class="card-img-top" alt="Imagen 1" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Agendar Cita</h5>
+                        <button class="btn btn-primary">Ir</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/1430/1430402.png" class="card-img-top" alt="Imagen 2" width="150" height="150">
-                <div class="card-body">
-                    <h5 class="card-title">Agregar Paciente</h5>
-                    <button class="btn btn-primary">Ir</button>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1430/1430402.png" class="card-img-top" alt="Imagen 2" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Agregar Paciente</h5>
+                        <button class="btn btn-primary">Ir</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="d-flex justify-content-center mt-5">
-        <div class="card-deck">
-            <div class="card">
-                <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top" alt="Imagen 3" width="150" height="150">
-                <div class="card-body">
-                    <h5 class="card-title">Agregar Doctor</h5>
-                    <button class="btn btn-primary">Ir</button>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top" alt="Imagen 3" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Agregar Doctor</h5>
+                        <button class="btn btn-primary">Ir</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top" alt="Imagen 4" width="150" height="150">
-                <div class="card-body">
-                    <h5 class="card-title">Agregar Especialidad</h5>
-                    <button class="btn btn-primary">Ir</button>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top" alt="Imagen 4" width="100">
+                    <div class="card-body">
+                        <h5 class="card-title">Agregar Especialidad</h5>
+                        <button class="btn btn-primary">Ir</button>
+                    </div>
                 </div>
             </div>
         </div>
