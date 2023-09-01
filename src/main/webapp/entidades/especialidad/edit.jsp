@@ -18,7 +18,7 @@
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control" value="${especialidad.nombre}">
                 </div>
-                <!-- Agregar más campos específicos de la especialidad aquí -->
+
                 <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
                 </div>
