@@ -11,13 +11,21 @@
         <hr/>
         <dl class="row">
             <dt class="col-sm-2">Nombre</dt>
-            <dd class="col-sm-10"><c:out value="${usuario.nombre}"/></dd>
+            <dd class="col-sm-10">
+                <c:out value="${usuario.nombre}"/>
+            </dd>
             <dt class="col-sm-2">Apellido</dt>
-            <dd class="col-sm-10"><c:out value="${usuario.apellido}"/></dd>
+            <dd class="col-sm-10">
+                <c:out value="${usuario.apellido}"/>
+            </dd>
             <dt class="col-sm-2">Email</dt>
-            <dd class="col-sm-10"><c:out value="${usuario.email}"/></dd>
+            <dd class="col-sm-10">
+                <c:out value="${usuario.email}"/>
+            </dd>
             <dt class="col-sm-2">Contraseña</dt>
-            <dd class="col-sm-10"><c:out value="${usuario.password}"/></dd>
+            <dd class="col-sm-10">
+                <c:out value="${usuario.password}"/>
+            </dd>
         </dl>
     </div>
     <div class="mt-2">
