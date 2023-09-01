@@ -61,8 +61,15 @@ public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUD
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        List<String> errores = new ArrayList<>();
+        Model model = repository.parse(req);
+        List<String> errores = new ArrayList<>(validate(model));
         req.setAttribute("errores", errores);
+
+        if (!errores.isEmpty()) {
+            req.getRequestDispatcher(getEntityPath() + "/index.jsp").forward(req, resp);
+            return;
+        }
+
 
         try {
             String method = req.getParameter("_method");
@@ -79,7 +86,6 @@ public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUD
                     break;
                 }
                 default: {
-                    Model model = repository.parse(req);
                     repository.save(model);
                     resp.sendRedirect(req.getContextPath() + "/" + getEntityName() + "?opcion=index");
                     break;
@@ -115,5 +121,9 @@ public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUD
     protected abstract String getEntityName();
 
     protected abstract String getEntityNamePlural();
+
+    protected List<String> validate(Model model) {
+        return new ArrayList<>();
+    }
 
 }
