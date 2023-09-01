@@ -2,13 +2,6 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <t:template>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detalles de Especialidad</title>
-    <div class="container mt-5">
         <h1>Detalles</h1>
 
         <div>
@@ -28,6 +21,4 @@
                 Regresar a la Lista
             </a>
         </div>
-    </div>
-
 </t:template>
