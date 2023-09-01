@@ -2,16 +2,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <t:template>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eliminar</title>
-    </head>
-    <body>
 
-    <div class="container mt-5">
         <h1>Eliminar</h1>
 
         <h3>¿Estás seguro/a de que deseas eliminar esta especialidad?</h3>
@@ -37,7 +28,5 @@
         <div class="mt-2">
             <a href="${pageContext.request.contextPath}/especialidad?opcion=index" class="btn btn-secondary">Regresar a la Lista</a>
         </div>
-    </div>
-    </body>
-    </html>
+
 </t:template>
