@@ -14,10 +14,8 @@
         <tr>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Email</th>
-            <th>Teléfono</th>
             <th>Fecha de Nacimiento</th>
-            <th>Dirección</th>
+            <th>Fecha de Registro</th>
             <th></th>
         </tr>
         </thead>
@@ -27,10 +25,8 @@
             <tr>
                 <td><c:out value="${paciente.nombre}"/></td>
                 <td><c:out value="${paciente.apellido}"/></td>
-                <td><c:out value="${paciente.email}"/></td>
-                <td><c:out value="${paciente.telefono}"/></td>
                 <td><c:out value="${paciente.fechaNacimiento}"/></td>
-                <td><c:out value="${paciente.direccion}"/></td>
+                <td><c:out value="${paciente.fechaRegistro}"/></td>
                 <td>
                     <a href="${pageContext.request.contextPath}/paciente?opcion=editar&id=${paciente.id}"
                        class="btn btn-secondary">
