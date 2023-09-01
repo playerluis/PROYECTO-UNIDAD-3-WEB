@@ -9,21 +9,21 @@
     <div class="row">
         <div class="col-md-7">
             <form action="${pageContext.request.contextPath}/paciente" method="post">
-                <div>
+                <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" class="form-control">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
+                    <input type="text" id="apellido" name="apellido" class="form-control">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" name="direccion">
+                    <input type="text" id="direccion" name="direccion" class="form-control">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento">
+                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control">
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Crear">
