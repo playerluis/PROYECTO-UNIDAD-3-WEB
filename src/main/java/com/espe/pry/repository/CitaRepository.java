@@ -6,7 +6,9 @@ import com.espe.pry.models.Paciente;
 import com.espe.pry.utils.AbstractCRUDRepository;
 import jakarta.servlet.http.HttpServletRequest;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class CitaRepository extends AbstractCRUDRepository<Cita> {
     @Override
@@ -25,8 +27,8 @@ public class CitaRepository extends AbstractCRUDRepository<Cita> {
         cita.setPaciente(paciente);
         cita.setDoctor(doctor);
 
-        cita.setFechaYHoraDeFin(LocalDateTime.parse(request.getParameter("fechaYHoraDeFin")));
-        cita.setFechaYHoraDeInicio(LocalDateTime.parse(request.getParameter("fechaYHoraDeInicio")));
+        cita.setFecha(LocalDate.parse(request.getParameter("fecha")));
+        cita.setHoraDeInicio(LocalTime.parse(request.getParameter("horaDeInicio")));
 
         return cita;
     }
