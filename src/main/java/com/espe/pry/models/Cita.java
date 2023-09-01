@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "citas")
@@ -20,14 +22,18 @@ public class Cita {
     private String descripcion;
 
     @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "fecha_y_hora_de_inicio")
-    private LocalDateTime fechaYHoraDeInicio;
+    @Temporal(TemporalType.DATE)
+    @Column(name = "fecha")
+    private LocalDate fecha;
 
     @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "fecha_y_hora_de_fin")
-    private LocalDateTime fechaYHoraDeFin;
+    @Temporal(TemporalType.TIME)
+    @Column(name = "hora_de_inicio")
+    private LocalTime horaDeInicio;
+
+    @NotNull
+    @Column(name = "duracion")
+    private Integer duracion;
 
     @ManyToOne
     @JoinColumn(name = "doctor_id")
