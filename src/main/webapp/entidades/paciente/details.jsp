@@ -4,7 +4,7 @@
 <%--@elvariable id="paciente" type="com.espe.pry.models.Paciente"--%>
 
 <t:template>
-    <h1>Detalless</h1>
+    <h1>Detalles</h1>
 
     <div>
         <h4>Paciente</h4>
