@@ -25,6 +25,7 @@
                 <td><c:out value="${paciente.nombre}"/></td>
                 <td><c:out value="${paciente.apellido}"/></td>
                 <td><c:out value="${paciente.fechaDeNacimiento}"/></td>
+                <td><c:out value="${paciente.direccion}"/></td>
                 <td><c:out value="${paciente.fechaDeRegistro}"/></td>
                 <td>
                     <a href="${pageContext.request.contextPath}/paciente?opcion=editar&id=${paciente.id}"

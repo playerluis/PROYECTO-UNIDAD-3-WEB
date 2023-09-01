@@ -18,10 +18,14 @@
                     <input type="text" id="apellido" name="apellido">
                 </div>
                 <div>
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+                <div>
                     <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
                     <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento">
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="submit" value="Crear">
                 </div>
             </form>

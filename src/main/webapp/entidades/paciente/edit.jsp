@@ -23,6 +23,10 @@
                     <input type="text" id="apellido" name="apellido" class="form-control" value="${paciente.apellido}">
                 </div>
                 <div class="form-group">
+                    <label for="direccion" class="control-label">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" class="form-control" value="${paciente.direccion}">
+                </div>
+                <div class="form-group">
                     <label for="fechaDeNacimiento" class="control-label">Fecha de Nacimiento:</label>
                     <input type="text" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control" value="${paciente.fechaDeNacimiento}">
                 </div>
