@@ -10,19 +10,19 @@
         <div class="col-md-7">
             <form action="${pageContext.request.contextPath}/paciente" method="post">
                 <div class="form-group">
-                    <label for="nombre">Nombre:</label>
+                    <label for="nombre" class="control-label">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="apellido">Apellido:</label>
+                    <label for="apellido" class="control-label">Apellido:</label>
                     <input type="text" id="apellido" name="apellido" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="direccion">Dirección:</label>
+                    <label for="direccion" class="control-label">Dirección:</label>
                     <input type="text" id="direccion" name="direccion" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
+                    <label for="fechaDeNacimiento" class="control-label">Fecha de Nacimiento:</label>
                     <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control">
                 </div>
                 <div class="form-group">
@@ -32,5 +32,6 @@
         </div>
     </div>
 
-    <a href="${pageContext.request.contextPath}/paciente?opcion=index" class="material-button regresar">Regresar a la Lista de Pacientes</a>
+    <a href="${pageContext.request.contextPath}/paciente?opcion=index" class="material-button regresar">Regresar a la
+        Lista de Pacientes</a>
 </t:template>
