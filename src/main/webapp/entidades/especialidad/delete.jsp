@@ -11,7 +11,7 @@
 <%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
 
 <t:template>
-    <h1>ELIMINAR</h1>
+    <h1>Eliminar</h1>
 
     <h3>¿Estás seguro/a de que deseas eliminar esta especialidad?</h3>
     <div>
