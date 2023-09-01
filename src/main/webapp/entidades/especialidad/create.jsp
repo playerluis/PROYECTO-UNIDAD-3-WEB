@@ -3,7 +3,7 @@
 
 <t:template>
 
-    <h1 class="mb-4">Crear Especialidad</h1>
+    <h1>Crear Especialidad</h1>
 
     <div class="row">
         <div class="col-md-7">
