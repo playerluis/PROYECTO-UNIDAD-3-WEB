@@ -44,6 +44,6 @@
     </div>
 
     <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">
-        Regresar a la Lista
+        Regresar a la Lista de Doctores
     </a>
 </t:template>
