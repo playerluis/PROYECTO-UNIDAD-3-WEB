@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label for="especialidad" class="control-label">Especialidad:</label>
                     <select id="especialidad" name="especialidad.id" class="form-control">
-                        <c:forEach var="especialidad" items="${listaEspecialidades}">
+                        <c:forEach var="especialidad" items="${especialidades}">
                             <option value="${especialidad.id}" ${especialidad.id == doctor.especialidad.id ? 'selected' : ''}>
                                 <c:out value="${especialidad.nombre}"/>
                             </option>
