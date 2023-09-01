@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%--@elvariable id="paciente" type="com.espe.pry.models.Paciente"--%>
 
 <t:template>
     <h1>Crear Paciente</h1>
