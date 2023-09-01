@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="pacientes" type="java.util.List<com.espe.pry.models.Paciente>"--%>
-
 <t:template>
     <h1>Inicio</h1>
 
@@ -25,7 +24,7 @@
             <tr>
                 <td><c:out value="${paciente.nombre}"/></td>
                 <td><c:out value="${paciente.apellido}"/></td>
-                <td><c:out value="${paciente.fecha_de_nacimiento}"/></td>
+                <td><c:out value="${paciente.fechaDeNacimiento}"/></td>
                 <td><c:out value="${paciente.fechaRegistro}"/></td>
                 <td>
                     <a href="${pageContext.request.contextPath}/paciente?opcion=editar&id=${paciente.id}"
