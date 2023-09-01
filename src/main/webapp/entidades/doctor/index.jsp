@@ -7,7 +7,7 @@
     <h1>Lista de Doctores</h1>
 
     <p>
-        <a href="${pageContext.request.contextPath}/doctor?opcion=crear" class="btn btn-primary">Crear Nuevo Doctor</a>
+        <a href="${pageContext.request.contextPath}/doctor?opcion=crear" class="btn btn-primary">Crear Nuevo Registro de Doctor</a>
     </p>
     <table class="table table-hover">
         <thead>
