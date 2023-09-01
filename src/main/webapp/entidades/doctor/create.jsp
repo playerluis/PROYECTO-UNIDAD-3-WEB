@@ -1,5 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+
+<%--@elvariable id="especialidades" type="java.util.List<com.espe.pry.models.Especialidad>"--%>
 
 <t:template>
     <h1>Crear Doctor</h1>
@@ -25,7 +28,7 @@
                 <div class="form-group">
                     <label for="especialidad" class="control-label">Especialidad:</label>
                     <select id="especialidad" name="especialidad.id" class="form-control">
-                        <c:forEach var="especialidad" items="${listaEspecialidades}">
+                        <c:forEach var="especialidad" items="${especialidades}">
                             <option value="${especialidad.id}">
                                 <c:out value="${especialidad.nombre}"/>
                             </option>

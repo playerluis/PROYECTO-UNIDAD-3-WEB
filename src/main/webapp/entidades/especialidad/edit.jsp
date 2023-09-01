@@ -2,7 +2,6 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
 
-
 <t:template>
 
     <h1 class="mb-4">Editar Especialidad</h1>
@@ -18,7 +17,7 @@
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" class="form-control" value="${especialidad.nombre}">
                 </div>
-                <!-- Agregar más campos específicos de la especialidad aquí -->
+
                 <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
                 </div>

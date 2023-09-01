@@ -6,7 +6,7 @@
 <t:template>
     <h1>Eliminar Doctor</h1>
 
-    <h3>¿Estás seguro/a de que deseas eliminar a este doctor?</h3>
+    <h3>¿Estás seguro/a de que deseas eliminar este doctor?</h3>
     <div>
         <h4>Doctor</h4>
         <hr/>
@@ -45,7 +45,7 @@
     </div>
     <div class="mt-2">
         <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">
-            Regresar a la Lista
+            Regresar a la Lista de Doctores
         </a>
     </div>
 </t:template>

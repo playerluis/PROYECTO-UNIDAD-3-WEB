@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label for="especialidad" class="control-label">Especialidad:</label>
                     <select id="especialidad" name="especialidad.id" class="form-control">
-                        <c:forEach var="especialidad" items="${listaEspecialidades}">
+                        <c:forEach var="especialidad" items="${especialidades}">
                             <option value="${especialidad.id}" ${especialidad.id == doctor.especialidad.id ? 'selected' : ''}>
                                 <c:out value="${especialidad.nombre}"/>
                             </option>
@@ -44,6 +44,6 @@
     </div>
 
     <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">
-        Regresar a la Lista
+        Regresar a la Lista de Doctores
     </a>
 </t:template>
