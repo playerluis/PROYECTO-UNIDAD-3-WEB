@@ -11,27 +11,28 @@
         <div class="col-md-4">
             <form action="${pageContext.request.contextPath}/paciente" method="post">
                 <input type="hidden" name="_method" value="PUT" />
-                <div>
+                <div class="form-group">
                     <input type="hidden" name="id" value="${paciente.id}"/>
                 </div>
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" value="${paciente.nombre}">
+                <div class="form-group">
+                    <label for="nombre" class="control-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" value="${paciente.nombre}">
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" value="${paciente.apellido}">
+                <div class="form-group">
+                    <label for="apellido" class="control-label">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" class="form-control" value="${paciente.apellido}">
                 </div>
-                <div>
-                    <label for="fechaDeNacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" value="${paciente.fechaDeNacimiento}">
+                <div class="form-group">
+                    <label for="fechaDeNacimiento" class="control-label">Fecha de Nacimiento:</label>
+                    <input type="text" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control" value="${paciente.fechaDeNacimiento}">
                 </div>
-                <div>
+                <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>
                 </div>
             </form>
         </div>
     </div>
+
 
     <a href="${pageContext.request.contextPath}/paciente?opcion=index" class="material-button regresar">
         Regresar a la Lista de Pacientes
