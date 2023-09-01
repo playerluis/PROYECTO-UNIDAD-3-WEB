@@ -15,14 +15,8 @@
             <dd class="col-sm-10"><c:out value="${paciente.nombre}"/></dd>
             <dt class="col-sm-2">Apellido</dt>
             <dd class="col-sm-10"><c:out value="${paciente.apellido}"/></dd>
-            <dt class="col-sm-2">Email</dt>
-            <dd class="col-sm-10"><c:out value="${paciente.email}"/></dd>
-            <dt class="col-sm-2">Teléfono</dt>
-            <dd class="col-sm-10"><c:out value="${paciente.telefono}"/></dd>
-            <dt class="col-sm-2">Dirección</dt>
-            <dd class="col-sm-10"><c:out value="${paciente.direccion}"/></dd>
             <dt class="col-sm-2">Fecha de Nacimiento</dt>
-            <dd class="col-sm-10"><c:out value="${paciente.fechaNacimiento}"/></dd>
+            <dd class="col-sm-10"><c:out value="${paciente.fecha_de_nacimiento}"/></dd>
         </dl>
 
         <form action="${pageContext.request.contextPath}/paciente" method="post">

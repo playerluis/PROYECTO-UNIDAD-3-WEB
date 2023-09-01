@@ -25,20 +25,8 @@
                     <input type="text" id="apellido" name="apellido">
                 </div>
                 <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
-                </div>
-                <div>
-                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
-                </div>
-                <div>
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" name="direccion">
+                    <label for="fecha_de_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento">
                 </div>
                 <div>
                     <input type="submit" value="Crear">
