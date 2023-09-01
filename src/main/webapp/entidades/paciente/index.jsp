@@ -1,13 +1,13 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%--@elvariable id="usuarios" type="java.util.List<com.espe.pry.models.Usuario>"--%>
+<%--@elvariable id="pacientes" type="java.util.List<com.espe.pry.models.Paciente>"--%>
 
 <t:template>
     <h1>Inicio</h1>
 
     <p>
-        <a href="${pageContext.request.contextPath}/usuario?opcion=registro" class="btn btn-primary">Crear Nuevo</a>
+        <a href="${pageContext.request.contextPath}/paciente?opcion=registro" class="btn btn-primary">Crear Nuevo Paciente</a>
     </p>
     <table class="table table-hover">
         <thead>
@@ -15,28 +15,32 @@
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Email</th>
-            <th>Contraseña</th>
+            <th>Teléfono</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Dirección</th>
             <th></th>
         </tr>
         </thead>
         <tbody>
 
-        <c:forEach var="usuario" items="${usuarios}">
+        <c:forEach var="paciente" items="${pacientes}">
             <tr>
-                <td><c:out value="${usuario.nombre}"/></td>
-                <td><c:out value="${usuario.apellido}"/></td>
-                <td><c:out value="${usuario.email}"/></td>
-                <td><c:out value="${usuario.password}"/></td>
+                <td><c:out value="${paciente.nombre}"/></td>
+                <td><c:out value="${paciente.apellido}"/></td>
+                <td><c:out value="${paciente.email}"/></td>
+                <td><c:out value="${paciente.telefono}"/></td>
+                <td><c:out value="${paciente.fechaNacimiento}"/></td>
+                <td><c:out value="${paciente.direccion}"/></td>
                 <td>
-                    <a href="${pageContext.request.contextPath}/usuario?opcion=editar&id=${usuario.id}"
+                    <a href="${pageContext.request.contextPath}/paciente?opcion=editar&id=${paciente.id}"
                        class="btn btn-secondary">
                         Editar
                     </a>
-                    <a href="${pageContext.request.contextPath}/usuario?opcion=detalles&id=${usuario.id}"
+                    <a href="${pageContext.request.contextPath}/paciente?opcion=detalles&id=${paciente.id}"
                        class="btn btn-secondary">
                         Detalles
                     </a>
-                    <a href="${pageContext.request.contextPath}/usuario?opcion=eliminar&id=${usuario.id}"
+                    <a href="${pageContext.request.contextPath}/paciente?opcion=eliminar&id=${paciente.id}"
                        class="btn btn-danger">
                         Eliminar
                     </a>
