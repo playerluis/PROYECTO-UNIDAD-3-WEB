@@ -10,7 +10,7 @@
 <%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
 
 <t:template>
-    <h1>EDITAR</h1>
+    <h1>Editar</h1>
 
     <h4>Especialidad</h4>
     <hr/>
