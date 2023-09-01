@@ -9,44 +9,46 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <t:template>
-    <h1>Crear Doctor</h1>
+    <div class="container mt-5">
+        <h1 class="display-4">Crear Doctor</h1>
 
-    <h4>Doctor</h4>
-    <hr/>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Doctor</h4>
+                <hr/>
 
-    <div class="row">
-        <div class="col-md-7">
-            <form action="${pageContext.request.contextPath}/doctor" method="post">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido">
-                </div>
-                <div>
-                    <label for="cedula">Cédula:</label>
-                    <input type="text" id="cedula" name="cedula">
-                </div>
-                <div>
-                    <label for="especialidad">Especialidad:</label>
-                    <select id="especialidad" name="especialidad.id">
-                        <c:forEach var="especialidad" items="${listaEspecialidades}">
-                            <option value="${especialidad.id}">
-                                <c:out value="${especialidad.nombre}"/>
-                            </option>
-                        </c:forEach>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Crear">
-                </div>
-            </form>
+                <form action="${pageContext.request.contextPath}/doctor" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cedula" class="form-label">Cédula:</label>
+                        <input type="text" class="form-control" id="cedula" name="cedula">
+                    </div>
+                    <div class="mb-3">
+                        <label for="especialidad" class="form-label">Especialidad:</label>
+                        <select class="form-select" id="especialidad" name="especialidad.id">
+                            <c:forEach var="especialidad" items="${listaEspecialidades}">
+                                <option value="${especialidad.id}">
+                                    <c:out value="${especialidad.nombre}"/>
+                                </option>
+                            </c:forEach>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" value="Crear" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div class="mt-2">
-        <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">Regresar a la Lista</a>
+        <div class="mt-2">
+            <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="btn btn-secondary">Regresar a la Lista</a>
+        </div>
     </div>
 </t:template>
