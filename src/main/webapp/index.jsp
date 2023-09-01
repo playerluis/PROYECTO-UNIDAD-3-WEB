@@ -25,7 +25,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/1572/1572132.png" class="card-img-top mt-3" alt="Imagen 1" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agendar Cita</h5>
-                        <button class="btn btn-success mx-auto w-75">Ir</button>
+                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/1430/1430402.png" class="card-img-top mt-3" alt="Imagen 2" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Paciente</h5>
-                        <button class="btn btn-success mx-auto w-75">Ir</button>
+                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top mt-3" alt="Imagen 3" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Doctor</h5>
-                        <button class="btn btn-success mx-auto w-75">Ir</button>
+                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top mt-3" alt="Imagen 4" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Especialidad</h5>
-                        <button class="btn btn-success mx-auto w-75">Ir</button>
+                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
                     </div>
                 </div>
             </div>
