@@ -33,6 +33,23 @@
             </div>
         </div>
     </div>
-
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top" alt="Imagen 3" width="150" height="150">
+                <div class="card-body">
+                    <h5 class="card-title">Agregar Doctor</h5>
+                    <button class="btn btn-primary">Ir</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top" alt="Imagen 4" width="150" height="150">
+                <div class="card-body">
+                    <h5 class="card-title">Agregar Especialidad</h5>
+                    <button class="btn btn-primary">Ir</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </t:template>
