@@ -27,9 +27,6 @@
                          alt="Imagen 1" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agendar Cita</h5>
-
-                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
-
                         <a class="btn btn-success mx-auto w-75"
                            href="${pageContext.request.contextPath}/cita?opcion=registro">Ir</a>
 
@@ -42,8 +39,6 @@
                          alt="Imagen 2" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Paciente</h5>
-                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
-
                         <a class="btn btn-success mx-auto w-75"
                            href="${pageContext.request.contextPath}/paciente?opcion=registro">
                             Ir
@@ -57,8 +52,6 @@
                          alt="Imagen 3" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Doctor</h5>
-                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
-
                         <a class="btn btn-success mx-auto w-75"
                            href="${pageContext.request.contextPath}/doctor?opcion=registro">
                             Ir
@@ -72,8 +65,6 @@
                          class="card-img-top mt-3" alt="Imagen 4" width="25">
                     <div class="card-body text-center">
                         <h5 class="card-title">Agregar Especialidad</h5>
-                        <a class="btn btn-success mx-auto w-75" href="/cita?opcion=Registro">Ir</a>
-
                         <a class="btn btn-success mx-auto w-75"
                            href="${pageContext.request.contextPath}/especialidad?opcion=registro">
                             Ir
