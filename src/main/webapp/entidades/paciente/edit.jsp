@@ -15,7 +15,7 @@
                     <input type="hidden" name="id" value="${paciente.id}"/>
                 </div>
                 <div>
-                    <label for="nombre">Apellido:</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" value="${paciente.nombre}">
                 </div>
                 <div>
