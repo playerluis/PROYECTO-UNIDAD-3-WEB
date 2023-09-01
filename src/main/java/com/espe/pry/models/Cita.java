@@ -9,11 +9,15 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "citas")
 @Data
-public class Cita  {
+public class Cita {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotNull
+    @Column(name = "descripcion")
+    private String descripcion;
 
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
@@ -32,5 +36,6 @@ public class Cita  {
     @ManyToOne
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
+
 
 }

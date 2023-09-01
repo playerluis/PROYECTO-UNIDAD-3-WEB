@@ -9,7 +9,7 @@ public class UsuarioRepository extends AbstractCRUDRepository<Usuario> {
     public Usuario parse(HttpServletRequest request) {
         String id = request.getParameter("id");
         Usuario usuario = new Usuario();
-        
+
 
         usuario.setId(id == null || id.isEmpty() ? null : Long.parseLong(id));
         usuario.setNombre(request.getParameter("nombre"));
