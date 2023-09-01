@@ -19,36 +19,36 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1572/1572132.png" class="card-img-top" alt="Imagen 1" width="100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1572/1572132.png" class="card-img-top mt-3" alt="Imagen 1" width="100">
                     <div class="card-body">
-                        <h5 class="card-title">Agendar Cita</h5>
+                        <h5 class="card-title text-center">Agendar Cita</h5>
                         <button class="btn btn-primary">Ir</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1430/1430402.png" class="card-img-top" alt="Imagen 2" width="100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1430/1430402.png" class="card-img-top mt-3" alt="Imagen 2" width="100">
                     <div class="card-body">
-                        <h5 class="card-title">Agregar Paciente</h5>
+                        <h5 class="card-title text-center">Agregar Paciente</h5>
                         <button class="btn btn-primary">Ir</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top" alt="Imagen 3" width="100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3481/3481061.png" class="card-img-top mt-3" alt="Imagen 3" width="100">
                     <div class="card-body">
-                        <h5 class="card-title">Agregar Doctor</h5>
+                        <h5 class="card-title text-center">Agregar Doctor</h5>
                         <button class="btn btn-primary">Ir</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="card">
-                    <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top" alt="Imagen 4" width="100">
+                    <img src="https://dharmamedicinaregenerativa.com.ar/wp-content/uploads/2023/03/2618588-1.png" class="card-img-top mt-3" alt="Imagen 4" width="100">
                     <div class="card-body">
-                        <h5 class="card-title">Agregar Especialidad</h5>
+                        <h5 class="card-title text-center">Agregar Especialidad</h5>
                         <button class="btn btn-primary">Ir</button>
                     </div>
                 </div>
