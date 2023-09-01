@@ -20,7 +20,7 @@
     </c:if>
 
     <p>
-        <a href="${pageContext.request.contextPath}/especialidad?opcion=registro" class="btn btn-primary">Crear Nueva Especialidad</a>
+        <a href="${pageContext.request.contextPath}/especialidad?opcion=registro" class="btn btn-primary mt-2 mb-2">Crear Nueva Especialidad</a>
     </p>
 
     <table class="table table-hover">

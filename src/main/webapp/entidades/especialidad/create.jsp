@@ -14,13 +14,13 @@
                 </div>
                 <!-- Agregar más campos específicos de la especialidad aquí -->
                 <div class="form-group">
-                    <input type="submit" value="Crear" class="btn btn-primary">
+                    <input type="submit" value="Crear" class="btn btn-primary mt-2">
                 </div>
             </form>
         </div>
     </div>
 
-    <div class="mt-4">
+    <div class="mt-3">
         <a href="${pageContext.request.contextPath}/especialidad?opcion=index" class="btn btn-secondary">Regresar a la Lista de Especialidades</a>
     </div>
 

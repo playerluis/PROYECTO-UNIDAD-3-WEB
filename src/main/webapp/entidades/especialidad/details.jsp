@@ -15,7 +15,7 @@
             </dl>
         </div>
         <div class="mt-2">
-            <a href="${pageContext.request.contextPath}/especialidad?opcion=editar&id=${especialidad.id}" class="btn btn-primary">
+            <a href="${pageContext.request.contextPath}/especialidad?opcion=editar&id=${especialidad.id}" class="btn btn-primary mb-2">
                 Editar
             </a>
             <a href="${pageContext.request.contextPath}/especialidad?opcion=index" class="btn btn-secondary">

@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">
+    <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar mt-2">
         Regresar a la Lista de Doctores
     </a>
 </t:template>
