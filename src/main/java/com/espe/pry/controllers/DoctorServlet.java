@@ -22,7 +22,7 @@ public class DoctorServlet extends AbstractCRUDServlet<Doctor, DoctorRepository>
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Especialidad> especialidads = new EspecialidadRepository().findAll();
-        req.setAttribute("especialidads", especialidads);
+        req.setAttribute("especialidades", especialidads);
 
         super.doGet(req, resp);
     }

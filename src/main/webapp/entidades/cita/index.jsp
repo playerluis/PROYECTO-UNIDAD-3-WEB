@@ -2,21 +2,31 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="citas" type="java.util.List<com.espe.pry.models.Cita>"--%>
+<%--@elvariable id="errores" type="java.util.List<java.lang.String>"--%>
 
 
 <t:template>
     <h1>Inicio</h1>
+
+    <c:if test="${errores.size() > 0}">
+        <div class="alert alert-danger">
+            <ul>
+                <c:forEach var="error" items="${errores}">
+                    <li>${error}</li>
+                </c:forEach>
+            </ul>
+        </div>
+    </c:if>
+
     <div id="calendar"></div>
     <script>
         let dates = [
-            <c:forEach var="cita" items="${citas}">
+            <c:forEach var="item" items="${citas}">
             {
-                id: ${cita.id},
-                title: "${cita.descripcion}",
-                description: "${cita.descripcion}",
-                start: "${cita.fecha + 'T' + cita.horaDeInicio}",
-                end: "${cita.fecha + 'T' + (cita.horaDeInicio + cita.duracion)}",
-                url: ""
+                title: '${item.paciente.apellido}',
+                start: '${item.fecha}T${item.horaDeInicio}',
+                end: '${item.fecha}T${item.horaDeInicio.plusHours(item.duracion)}',
+                url: '${pageContext.request.contextPath}/cita?opcion=detalles&id=${item.id}'
             },
             </c:forEach>
         ];

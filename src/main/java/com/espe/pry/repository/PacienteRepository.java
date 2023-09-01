@@ -19,6 +19,9 @@ public class PacienteRepository extends AbstractCRUDRepository<Paciente> {
         paciente.setFechaDeNacimiento(LocalDate.parse(request.getParameter("fechaDeNacimiento")));
         paciente.setDireccion(request.getParameter("direccion"));
 
+        if (id != null)
+            paciente.setFechaDeRegistro(find(Long.parseLong(id)).getFechaDeRegistro());
+
         return paciente;
 
     }

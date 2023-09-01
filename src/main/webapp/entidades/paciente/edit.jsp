@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="fechaDeNacimiento" class="control-label">Fecha de Nacimiento:</label>
-                    <input type="text" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control" value="${paciente.fechaDeNacimiento}">
+                    <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control" value="${paciente.fechaDeNacimiento}">
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Guardar" class="btn btn-primary mt-2"/>

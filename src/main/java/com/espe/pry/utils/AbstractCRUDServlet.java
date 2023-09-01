@@ -4,8 +4,11 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.ConstraintViolationException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUDRepository<Model>> extends HttpServlet {
@@ -57,26 +60,39 @@ public abstract class AbstractCRUDServlet<Model, Repository extends AbstractCRUD
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String method = req.getParameter("_method");
-        if (method == null)
-            method = "POST";
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        List<String> errores = new ArrayList<>();
+        req.setAttribute("errores", errores);
 
-        switch (method) {
-            case "PUT": {
-                doPut(req, resp);
-                break;
+        try {
+            String method = req.getParameter("_method");
+            if (method == null)
+                method = "POST";
+
+            switch (method) {
+                case "PUT": {
+                    doPut(req, resp);
+                    break;
+                }
+                case "DELETE": {
+                    doDelete(req, resp);
+                    break;
+                }
+                default: {
+                    Model model = repository.parse(req);
+                    repository.save(model);
+                    resp.sendRedirect(req.getContextPath() + "/" + getEntityName() + "?opcion=index");
+                    break;
+                }
             }
-            case "DELETE": {
-                doDelete(req, resp);
-                break;
+        } catch (ConstraintViolationException e) {
+
+            repository.manager.getTransaction().rollback();
+
+            for (ConstraintViolation<?> violation : e.getConstraintViolations()) {
+                errores.add(violation.getMessage());
             }
-            default: {
-                Model model = repository.parse(req);
-                repository.save(model);
-                resp.sendRedirect(req.getContextPath() + "/" + getEntityName() + "?opcion=index");
-                break;
-            }
+            req.getRequestDispatcher(getEntityPath() + "/index.jsp").forward(req, resp);
         }
     }
 

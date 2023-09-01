@@ -13,16 +13,16 @@ public class EspecialidadServlet extends AbstractCRUDServlet<Especialidad, Espec
 
     @Override
     protected String getEntityPath() {
-        return "entidades/usuario";
+        return "entidades/especialidad";
     }
 
     @Override
     protected String getEntityName() {
-        return "usuario";
+        return "especialidad";
     }
 
     @Override
     protected String getEntityNamePlural() {
-        return "usuarios";
+        return "especialidades";
     }
 }

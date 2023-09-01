@@ -29,6 +29,9 @@ public class CitaRepository extends AbstractCRUDRepository<Cita> {
 
         cita.setFecha(LocalDate.parse(request.getParameter("fecha")));
         cita.setHoraDeInicio(LocalTime.parse(request.getParameter("horaDeInicio")));
+        cita.setDuracion(Integer.parseInt(request.getParameter("duracion")));
+        cita.setDescripcion(request.getParameter("descripcion"));
+
 
         return cita;
     }
