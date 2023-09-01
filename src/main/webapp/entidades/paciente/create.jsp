@@ -1,16 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: brand
-  Date: 1/9/2023
-  Time: 0:47
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Paciente</title>
-</head>
-<body>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+
+<t:template>
     <h1>Crear Paciente</h1>
 
     <div class="row">
@@ -36,7 +27,4 @@
     </div>
 
     <a href="${pageContext.request.contextPath}/paciente?opcion=index" class="material-button regresar">Regresar a la Lista de Pacientes</a>
-
-
-</body>
-</html>
+</t:template>

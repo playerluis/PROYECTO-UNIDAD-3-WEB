@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="pacientes" type="java.util.List<com.espe.pry.models.Paciente>"--%>
-
 <t:template>
     <h1>Inicio</h1>
 
