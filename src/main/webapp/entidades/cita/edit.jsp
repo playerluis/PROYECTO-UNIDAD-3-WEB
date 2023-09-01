@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group">
                     <label for="DoctorId" class="control-label">Doctor:</label>
-                    <select id="DoctorId" name="DoctorId" class="form-control"
+                    <select id="DoctorId" name="DoctorId" class="form-control">
                         <%--@elvariable id="doctores" type="java.util.List<com.espe.pry.models.Doctor>"--%>
                     <c:forEach var="doctor" items="${doctores}">
 

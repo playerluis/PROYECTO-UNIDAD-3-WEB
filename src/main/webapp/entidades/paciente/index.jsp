@@ -2,8 +2,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="pacientes" type="java.util.List<com.espe.pry.models.Paciente>"--%>
+<%--@elvariable id="errores" type="java.util.List<java.lang.String>"--%>
+
+
 <t:template>
     <h1>Inicio</h1>
+
+    <c:if test="${errores.size() > 0}">
+        <div class="alert alert-danger">
+            <ul>
+                <c:forEach var="error" items="${errores}">
+                    <li>${error}</li>
+                </c:forEach>
+            </ul>
+        </div>
+    </c:if>
 
     <p>
         <a href="${pageContext.request.contextPath}/paciente?opcion=registro" class="btn btn-primary">Crear Nuevo Paciente</a>

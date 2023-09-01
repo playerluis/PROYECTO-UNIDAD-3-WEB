@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet(name = "citaServlet", value = {"/cita"})
 public class CitaServlet extends AbstractCRUDServlet<Cita, CitaRepository> {
@@ -42,5 +43,27 @@ public class CitaServlet extends AbstractCRUDServlet<Cita, CitaRepository> {
     @Override
     protected String getEntityNamePlural() {
         return "citas";
+    }
+
+    @Override
+    protected List<String> validate(Cita cita) {
+        List<Cita> citas = repository.findAll();
+        //valida que la cita no se encuentre dentro del rango de fechas de otra cita del mismo paciente o doctor
+        for (Cita c : citas) {
+            if (c.getDoctor().getId().equals(cita.getDoctor().getId()) && c.getFecha().equals(cita.getFecha())) {
+                if (cita.getHoraDeInicio().isAfter(c.getHoraDeInicio()) && cita.getHoraDeInicio().isBefore(c.getHoraDeInicio().plusHours(c.getDuracion()))) {
+                    return List.of("El doctor ya tiene una cita en ese rango de horas");
+                }
+            }
+
+            if (c.getPaciente().getId().equals(cita.getPaciente().getId()) && c.getFecha().equals(cita.getFecha())) {
+                if (cita.getHoraDeInicio().isAfter(c.getHoraDeInicio()) && cita.getHoraDeInicio().isBefore(c.getHoraDeInicio().plusHours(c.getDuracion()))) {
+                    return List.of("El paciente ya tiene una cita en ese rango de horas");
+                }
+            }
+        }
+
+        return List.of();
+
     }
 }

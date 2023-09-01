@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
 
 <%--@elvariable id="especialidades" type="java.util.List<com.espe.pry.models.Especialidad>"--%>
@@ -26,8 +27,8 @@
                     <input type="text" id="cedula" name="cedula" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="especialidad" class="control-label">Especialidad:</label>
-                    <select id="especialidad" name="especialidad.id" class="form-control">
+                    <label for="especialidadId" class="control-label">Especialidad:</label>
+                    <select id="especialidadId" name="especialidadId" class="form-control">
                         <c:forEach var="especialidad" items="${especialidades}">
                             <option value="${especialidad.id}">
                                 <c:out value="${especialidad.nombre}"/>

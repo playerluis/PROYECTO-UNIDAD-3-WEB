@@ -26,6 +26,12 @@
                     <input type="number" id="duracion" name="duracion" class="form-control"/>
                 </div>
                 <div class="form-group">
+                    <label for="descripcion" class="control-label">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" class="form-control" placeholder="Descripción">
+
+                    </textarea>
+                </div>
+                <div class="form-group">
                     <label for="doctorId" class="control-label">Doctor:</label>
                     <select id="doctorId" name="doctorId" class="form-control">
                         <c:forEach var="doctor" items="${doctores}">

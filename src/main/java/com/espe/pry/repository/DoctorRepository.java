@@ -13,7 +13,7 @@ public class DoctorRepository extends AbstractCRUDRepository<Doctor> {
 
         doctor.setId(id == null || id.isEmpty() ? null : Long.parseLong(id));
 
-        Especialidad especialidad = manager.find(Especialidad.class, Integer.parseInt(request.getParameter("especialidad")));
+        Especialidad especialidad = manager.find(Especialidad.class, Integer.parseInt(request.getParameter("especialidadId")));
 
         doctor.setNombre(request.getParameter("nombre"));
         doctor.setApellido(request.getParameter("apellido"));

@@ -26,7 +26,7 @@
                     <input type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Crear">
+                    <input type="submit" value="Crear" class="btn btn-primary">
                 </div>
             </form>
         </div>

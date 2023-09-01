@@ -43,5 +43,4 @@ public class Cita {
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
 
-
 }

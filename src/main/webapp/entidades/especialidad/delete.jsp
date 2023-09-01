@@ -18,7 +18,6 @@
                     <dt class="col-sm-2">Nombre</dt>
                     <dd class="col-sm-10">
                     <c:out value="${especialidad.nombre}"/></dd>
-                    <!-- Agregar más campos específicos de la especialidad aquí -->
                 </dl>
 
                 <form action="${pageContext.request.contextPath}/especialidad" method="post">
