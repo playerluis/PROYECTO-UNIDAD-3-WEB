@@ -11,49 +11,35 @@
 <%--@elvariable id="doctor" type="com.espe.pry.models.Doctor"--%>
 
 <t:template>
-    <h1>Eliminar</h1>
+    <div class="container mt-5">
+        <h1 class="display-4">Eliminar Doctor</h1>
 
-    <h3>¿Estás seguro/a de que deseas eliminar el doctor?</h3>
-    <div>
-        <h4>Doctor</h4>
-        <hr/>
-        <dl class="row">
-            <dt class="col-sm-2">
-                Nombre
-            </dt>
-            <dd class="col-sm-10">
-                <c:out value="${doctor.nombre}"/>
-            </dd>
-            <dt class="col-sm-2">
-                Apellido
-            </dt>
-            <dd class="col-sm-10">
-                <c:out value="${doctor.apellido}"/>
-            </dd>
-            <dt class="col-sm-2">
-                Cédula
-            </dt>
-            <dd class="col-sm-10">
-                <c:out value="${doctor.cedula}"/>
-            </dd>
-            <dt class="col-sm-2">
-                Especialidad
-            </dt>
-            <dd class="col-sm-10">
-                <c:out value="${doctor.especialidad.nombre}"/>
-            </dd>
-        </dl>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Doctor</h4>
+                <hr/>
 
-        <form action="${pageContext.request.contextPath}/doctor" method="post">
-            <input type="hidden" name="_method" value="DELETE"/>
-            <input type="hidden" name="id" value="${doctor.id}"/>
-            <input type="submit" value="Eliminar" class="btn btn-danger mt-2"/> |
-        </form>
-    </div>
-    <div class="mt-2">
-        <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="material-button regresar">
-            Regresar a la Lista
-        </a>
+                <dl class="row">
+                    <dt class="col-sm-2">Nombre</dt>
+                    <dd class="col-sm-10"><c:out value="${doctor.nombre}"/></dd>
+                    <dt class="col-sm-2">Apellido</dt>
+                    <dd class="col-sm-10"><c:out value="${doctor.apellido}"/></dd>
+                    <dt class="col-sm-2">Cédula</dt>
+                    <dd class="col-sm-10"><c:out value="${doctor.cedula}"/></dd>
+                    <dt class="col-sm-2">Especialidad</dt>
+                    <dd class="col-sm-10"><c:out value="${doctor.especialidad.nombre}"/></dd>
+                </dl>
+
+                <form action="${pageContext.request.contextPath}/doctor" method="post">
+                    <input type="hidden" name="_method" value="DELETE"/>
+                    <input type="hidden" name="id" value="${doctor.id}"/>
+                    <input type="submit" value="Eliminar" class="btn btn-danger mt-2"/> |
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-2">
+            <a href="${pageContext.request.contextPath}/doctor?opcion=index" class="btn btn-secondary">Regresar a la Lista</a>
+        </div>
     </div>
 </t:template>
-
