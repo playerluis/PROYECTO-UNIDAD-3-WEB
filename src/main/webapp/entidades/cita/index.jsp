@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="fc" uri="http://fullcalendar.io/taglib" %>
 <%--@elvariable id="citas" type="java.util.List<com.espe.pry.models.Cita>"--%>
 
 
@@ -9,22 +8,22 @@
     <h1>Inicio</h1>
     <div id="calendar"></div>
     <script>
-        var dates = [
+        let dates = [
             <c:forEach var="cita" items="${citas}">
             {
                 id: ${cita.id},
-                title: "${cita.title}",
-                description: "${cita.description}",
-                start: "${cita.fechaYHoraDeInicio}",
-                end: "${cita.fechaYHoraDeFin}",
+                title: "${cita.descripcion}",
+                description: "${cita.descripcion}",
+                start: "${cita.fecha + 'T' + cita.horaDeInicio}",
+                end: "${cita.fecha + 'T' + (cita.horaDeInicio + cita.duracion)}",
                 url: ""
             },
             </c:forEach>
         ];
 
         document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
                 locale: "es",
                 height: 350,
                 timeZone: 'UTC',
@@ -38,7 +37,7 @@
     </script>
     <br>
     <p>
-        <a href="<c:url value='/Create'/>" class="material-button nuevo">Crear Nuevo</a>
+        <a href="${pageContext.request.contextPath}/cita?opcion=registro" class="btn btn-primary">Crear Nuevo</a>
     </p>
     <table class="table table-hover">
         <thead>
@@ -56,13 +55,22 @@
             <tr>
                 <td>${item.fecha}</td>
                 <td>${item.horaDeInicio}</td>
-                <td>${item.horas}</td>
+                <td>${item.duracion}</td>
                 <td>${item.doctor.apellido}</td>
                 <td>${item.paciente.apellido}</td>
                 <td>
-                    <a href="<c:url value='/Edit/${item.id}'/>" class="material-button">Editar</a> |
-                    <a href="<c:url value='/Details/${item.id}'/>" class="material-button">Detalles</a> |
-                    <a href="<c:url value='/Delete/${item.id}'/>" class="material-button">Eliminar</a>
+                    <a href="${pageContext.request.contextPath}/cita?opcion=editar&id=${item.id}"
+                       class="btn btn-secondary">
+                        Editar
+                    </a>
+                    <a href="${pageContext.request.contextPath}/cita?opcion=detalles&id=${item.id}"
+                       class="btn btn-secondary">
+                        Detalles
+                    </a>
+                    <a href="${pageContext.request.contextPath}/cita?opcion=eliminar&id=${item.id}"
+                       class="btn btn-danger">
+                        Eliminar
+                    </a>
                 </td>
             </tr>
         </c:forEach>
