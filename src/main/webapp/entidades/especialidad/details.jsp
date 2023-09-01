@@ -1,14 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
 
 <t:template>
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detalles de Especialidad</title>
-    <div class="container mt-5">
         <h1>Detalles</h1>
 
         <div>
@@ -17,7 +12,6 @@
             <dl class="row">
                 <dt class="col-sm-2">Nombre</dt>
                 <dd class="col-sm-10"><c:out value="${especialidad.nombre}"/></dd>
-                <!-- Agregar más campos específicos de la especialidad aquí -->
             </dl>
         </div>
         <div class="mt-2">
@@ -28,6 +22,4 @@
                 Regresar a la Lista
             </a>
         </div>
-    </div>
-
 </t:template>
