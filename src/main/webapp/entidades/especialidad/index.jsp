@@ -2,10 +2,10 @@
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="especialidades" type="java.util.List<com.espe.pry.models.Especialidad>"--%>
 
+
 <t:template>
 
     <h1>Inicio</h1>
-
     <p>
         <a href="${pageContext.request.contextPath}/especialidad?opcion=registro" class="btn btn-primary">Crear Nueva Especialidad</a>
     </p>
