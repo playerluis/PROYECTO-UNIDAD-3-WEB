@@ -6,7 +6,7 @@
 <t:template>
     <h1>Eliminar Doctor</h1>
 
-    <h3>¿Estás seguro/a de que deseas eliminar a este doctor?</h3>
+    <h3>¿Estás seguro/a de que deseas eliminar este doctor?</h3>
     <div>
         <h4>Doctor</h4>
         <hr/>
