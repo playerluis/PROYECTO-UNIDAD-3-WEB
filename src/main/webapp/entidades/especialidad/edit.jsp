@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%--@elvariable id="especialidad" type="com.espe.pry.models.Especialidad"--%>
+
+
 <t:template>
-<div class="container mt-5">
+
     <h1 class="mb-4">Editar Especialidad</h1>
 
     <div class="row">
@@ -25,8 +27,5 @@
     </div>
 
     <a href="${pageContext.request.contextPath}/especialidad?opcion=index" class="btn btn-secondary mt-2">Regresar a la Lista</a>
-</div>
 
-</body>
-</html>
 </t:template>
